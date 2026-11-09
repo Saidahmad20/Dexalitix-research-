@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Dexalitix Research – Konsultan IT, Data &amp; Riset</title>
+<meta name="description" content="Dexalitix Research: jasa website &amp; landing page, analisis data, serta skripsi dan artikel SEO. Biaya menyesuaikan kebutuhan project.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#F6F4EF;--surface:#FFFFFF;--ink:#13203A;--muted:#55627A;--line:#DAD6CB;
+  --accent:#0B8F7E;--accent-ink:#FFFFFF;--gold:#B8892B;--hero:#0F1A31;--hero-ink:#F6F4EF;
+  box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){--bg:#0E1626;--surface:#16213A;--ink:#EEF1F7;--muted:#9AA7BF;--line:#26324D;--accent:#2CC4AE;--accent-ink:#06231E;--gold:#E0B456;--hero:#0A111F;--hero-ink:#EEF1F7}
+}
+:root[data-theme="dark"]{--bg:#0E1626;--surface:#16213A;--ink:#EEF1F7;--muted:#9AA7BF;--line:#26324D;--accent:#2CC4AE;--accent-ink:#06231E;--gold:#E0B456;--hero:#0A111F;--hero-ink:#EEF1F7}
+html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + 64px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Plus Jakarta Sans",system-ui,sans-serif;line-height:1.65;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:Fraunces,Georgia,serif;line-height:1.12;margin:0;letter-spacing:-.015em}
+a{color:inherit}
+.wrap{max-width:1100px;margin:0 auto;padding:0 22px}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--hero);z-index:20}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;background:var(--hero);color:var(--hero-ink);border-bottom:1px solid rgba(255,255,255,.08)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:64px;gap:16px}
+.brand{font-family:Fraunces,Georgia,serif;font-weight:700;font-size:1.3rem;text-decoration:none}
+.brand span{color:var(--gold)}
+.nav nav{display:flex;gap:26px;font-size:.92rem}
+.nav nav a{text-decoration:none;opacity:.8}.nav nav a:hover{opacity:1}
+.btn{display:inline-block;padding:13px 26px;border-radius:999px;background:var(--accent);color:var(--accent-ink);font:inherit;font-weight:700;text-decoration:none;border:0;cursor:pointer;transition:transform .15s,filter .15s}
+.btn:hover{filter:brightness(1.1);transform:translateY(-2px)}
+.btn.ghost{background:transparent;border:1px solid rgba(255,255,255,.45);color:var(--hero-ink)}
+.btn.sm{padding:9px 18px;font-size:.88rem}
+.btn:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-visible,summary:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+
+/* HERO */
+.hero{position:relative;overflow:hidden;background:var(--hero);color:var(--hero-ink);padding:76px 0 96px}
+.hero::before{content:"";position:absolute;inset:0;background:
+  radial-gradient(520px 340px at 85% 10%,rgba(44,196,174,.28),transparent 70%),
+  radial-gradient(460px 320px at 5% 95%,rgba(224,180,86,.20),transparent 70%),
+  linear-gradient(rgba(255,255,255,.04) 1px,transparent 1px) 0 0/44px 44px,
+  linear-gradient(90deg,rgba(255,255,255,.04) 1px,transparent 1px) 0 0/44px 44px}
+.hero .wrap{position:relative;display:grid;grid-template-columns:1.1fr .9fr;gap:50px;align-items:center}
+.badge{display:inline-flex;align-items:center;gap:8px;padding:6px 14px;border:1px solid rgba(255,255,255,.2);border-radius:999px;font-size:.82rem;background:rgba(255,255,255,.06);margin-bottom:22px}
+.badge i{width:8px;height:8px;border-radius:50%;background:#2CC4AE;box-shadow:0 0 0 4px rgba(44,196,174,.25)}
+.hero h1{font-size:clamp(2.3rem,5.4vw,3.9rem);font-weight:700}
+.hero h1 em{font-style:normal;background:linear-gradient(90deg,#2CC4AE,#E0B456);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p{max-width:50ch;opacity:.85;margin:22px 0 32px;font-size:1.08rem}
+.cta{display:flex;gap:12px;flex-wrap:wrap}
+.tags{display:flex;gap:8px;flex-wrap:wrap;margin-top:34px}
+.tags span{font-size:.8rem;padding:5px 12px;border-radius:999px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12)}
+
+.stage{position:relative;min-height:380px}
+.win{position:absolute;inset:0 0 70px 0;background:#fff;color:#13203A;border-radius:16px;box-shadow:0 30px 60px rgba(0,0,0,.45);overflow:hidden}
+.win .bar{display:flex;gap:6px;padding:11px 14px;background:#EEF0F4}
+.win .bar b{width:10px;height:10px;border-radius:50%;background:#C9CED8}
+.win .body{padding:22px}
+.win .h{height:14px;width:62%;border-radius:6px;background:#13203A;margin-bottom:10px}
+.win .l{height:8px;border-radius:5px;background:#D9DEE8;margin:8px 0}
+.win .btnm{display:inline-block;margin-top:12px;padding:9px 20px;border-radius:99px;background:#0B8F7E;color:#fff;font-size:.78rem;font-weight:700}
+.win .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:20px}
+.win .grid div{height:62px;border-radius:10px;background:linear-gradient(135deg,#E6F4F1,#F6EBD3)}
+.chart{position:absolute;right:-6px;bottom:0;width:62%;background:rgba(19,32,58,.92);backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,.18);border-radius:16px;padding:16px;box-shadow:0 24px 50px rgba(0,0,0,.5);color:#F6F4EF}
+.chart small{font-size:.74rem;opacity:.7}
+.bars{display:flex;align-items:flex-end;gap:7px;height:84px;margin-top:10px}
+.bars i{flex:1;border-radius:5px 5px 0 0;background:linear-gradient(#2CC4AE,rgba(44,196,174,.25));transform-origin:bottom;animation:grow 1s cubic-bezier(.2,.8,.2,1) both}
+.bars i:nth-child(1){height:35%}.bars i:nth-child(2){height:52%;animation-delay:.08s}.bars i:nth-child(3){height:44%;animation-delay:.16s}.bars i:nth-child(4){height:70%;animation-delay:.24s}.bars i:nth-child(5){height:62%;animation-delay:.32s}.bars i:nth-child(6){height:94%;background:linear-gradient(#E0B456,rgba(224,180,86,.3));animation-delay:.4s}
+@keyframes grow{from{transform:scaleY(0)}to{transform:scaleY(1)}}
+.doc{position:absolute;left:-14px;bottom:18px;width:46%;background:#fff;color:#13203A;border-radius:12px;padding:14px;box-shadow:0 20px 40px rgba(0,0,0,.4);transform:rotate(-4deg)}
+.doc b{display:block;font-size:.72rem;margin-bottom:6px}
+.doc span{display:block;height:6px;border-radius:4px;background:#D9DEE8;margin:6px 0}
+.doc span:nth-of-type(2){width:80%}.doc span:nth-of-type(3){width:60%;background:#0B8F7E}
+
+section{padding:84px 0}
+h2{font-size:clamp(1.8rem,3.8vw,2.6rem)}
+.lead{max-width:58ch;color:var(--muted);margin:14px 0 40px}
+.services{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.card{position:relative;background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:30px 26px;transition:transform .2s,box-shadow .2s;overflow:hidden}
+.card:hover{transform:translateY(-6px);box-shadow:0 22px 44px rgba(19,32,58,.14)}
+.card::after{content:"";position:absolute;left:0;top:0;height:5px;width:100%;background:var(--c)}
+.card:nth-child(1){--c:var(--accent)}.card:nth-child(2){--c:var(--gold)}.card:nth-child(3){--c:var(--ink)}
+.ic{width:52px;height:52px;border-radius:14px;display:grid;place-items:center;margin-bottom:18px;background:color-mix(in srgb,var(--c) 16%,transparent);color:var(--c)}
+.ic svg{width:26px;height:26px}
+.card h3{font-size:1.35rem;margin-bottom:10px}
+.card p{color:var(--muted);margin:0 0 14px;font-size:.95rem}
+.card ul{margin:0;padding:0;list-style:none;font-size:.92rem}
+.card li{margin:7px 0;padding-left:24px;position:relative}
+.card li::before{content:"";position:absolute;left:0;top:.5em;width:12px;height:7px;border-left:2px solid var(--accent);border-bottom:2px solid var(--accent);transform:rotate(-45deg)}
+
+.alt{background:var(--surface);border-block:1px solid var(--line)}
+.why{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.why div{padding:22px;border-radius:16px;background:var(--bg);border:1px solid var(--line)}
+.why b{display:block;font-family:Fraunces,serif;font-size:1.1rem;margin-bottom:6px}
+.why span{color:var(--muted);font-size:.9rem}
+
+.quote{background:linear-gradient(135deg,var(--hero),#1B3A52);color:var(--hero-ink);border-radius:24px;padding:46px 40px;display:grid;grid-template-columns:1.2fr .8fr;gap:30px;align-items:center}
+.quote h2{font-size:clamp(1.6rem,3.2vw,2.2rem)}
+.quote p{opacity:.85;margin:12px 0 0}
+.quote ul{margin:0;padding:0;list-style:none}
+.quote li{padding:10px 0;border-bottom:1px solid rgba(255,255,255,.14);font-size:.95rem}
+.quote li:last-child{border:0}
+
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;counter-reset:s;padding:0;list-style:none;margin:0;position:relative}
+.steps li{counter-increment:s}
+.steps li::before{content:counter(s);display:grid;place-items:center;width:42px;height:42px;border-radius:50%;background:var(--accent);color:var(--accent-ink);font-family:Fraunces,serif;font-weight:700;margin-bottom:14px}
+.steps b{display:block;margin-bottom:4px}
+.steps span{color:var(--muted);font-size:.92rem}
+
+details{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px 22px;margin-bottom:12px}
+summary{cursor:pointer;font-weight:600;list-style:none;display:flex;justify-content:space-between;gap:12px}
+summary::after{content:"+";font-size:1.3rem;line-height:1;color:var(--accent)}
+details[open] summary::after{content:"–"}
+details p{margin:12px 0 0;color:var(--muted)}
+
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:40px}
+.info p{margin:0 0 18px}
+.info b{display:block;font-size:.85rem;color:var(--muted);font-weight:500}
+.info a{text-decoration:none;color:var(--accent);font-weight:700;word-break:break-all}
+form{display:grid;gap:12px;background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:26px}
+label{font-size:.85rem;color:var(--muted)}
+input,textarea,select{width:100%;padding:12px 14px;border:1px solid var(--line);border-radius:10px;background:var(--bg);color:var(--ink);font:inherit}
+footer{background:var(--hero);color:var(--hero-ink);padding:28px 0;font-size:.88rem}
+footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.wa-float{position:fixed;right:18px;bottom:calc(18px + env(safe-area-inset-bottom,0px));z-index:15;box-shadow:0 10px 28px rgba(0,0,0,.3)}
+@media (max-width:860px){
+  .hero .wrap,.contact,.quote{grid-template-columns:1fr}
+  .services,.why{grid-template-columns:1fr}
+  .steps{grid-template-columns:1fr 1fr}
+  .nav nav{display:none}
+  section{padding:56px 0}
+  .stage{min-height:340px}
+  .quote{padding:34px 24px}
+}
+@media (prefers-reduced-motion:reduce){.bars i{animation:none}html{scroll-behavior:auto}.card,.btn{transition:none}}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#beranda">Dexalitix<span>.</span>Research</a>
+    <nav><a href="#layanan">Layanan</a><a href="#biaya">Biaya</a><a href="#proses">Proses</a><a href="#faq">FAQ</a><a href="#kontak">Kontak</a></nav>
+    <a class="btn sm" href="https://wa.me/6282324169550?text=Halo%20Dexalitix%20Research%2C%20saya%20ingin%20konsultasi." target="_blank" rel="noopener">Chat WhatsApp</a>
+  </div>
+</header>
+
+<main id="beranda">
+<div class="hero">
+  <div class="wrap">
+    <div>
+      <div class="badge"><i></i>Menerima project baru</div>
+      <h1>Ubah ide dan data menjadi <em>hasil yang nyata</em>.</h1>
+      <p>Dexalitix Research membantu bisnis, mahasiswa, dan peneliti lewat website yang meyakinkan, analisis data yang tepat, serta tulisan ilmiah dan SEO yang rapi.</p>
+      <div class="cta">
+        <a class="btn" href="https://wa.me/6282324169550?text=Halo%20Dexalitix%20Research%2C%20saya%20ingin%20konsultasi." target="_blank" rel="noopener">Konsultasi gratis</a>
+        <a class="btn ghost" href="#layanan">Lihat layanan</a>
+      </div>
+      <div class="tags"><span>Website</span><span>Landing Page</span><span>Analisis Data</span><span>Skripsi</span><span>Artikel SEO</span></div>
+    </div>
+    <div class="stage" aria-hidden="true">
+      <div class="win">
+        <div class="bar"><b></b><b></b><b></b></div>
+        <div class="body"><div class="h"></div><div class="l"></div><div class="l" style="width:80%"></div><span class="btnm">Hubungi kami</span>
+          <div class="grid"><div></div><div></div><div></div></div></div>
+      </div>
+      <div class="chart"><small>Ringkasan analisis data</small><div class="bars"><i></i><i></i><i></i><i></i><i></i><i></i></div></div>
+      <div class="doc"><b>Bab IV – Hasil</b><span></span><span></span><span></span></div>
+    </div>
+  </div>
+</div>
+
+<section id="layanan">
+  <div class="wrap">
+    <h2>Layanan kami</h2>
+    <p class="lead">Tiga bidang yang kami kerjakan dengan komunikasi jelas, hasil terukur, dan revisi yang wajar.</p>
+    <div class="services">
+      <article class="card">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M3 9h18M8 21h8M12 18v3"/></svg></div>
+        <h3>Website &amp; Landing Page</h3>
+        <p>Tampilan profesional yang membuat calon pelanggan percaya dan langsung menghubungi Anda.</p>
+        <ul><li>Website profil bisnis</li><li>Landing page produk dan promosi</li><li>Responsif di HP dan komputer</li><li>Tombol WhatsApp dan formulir kontak</li></ul>
+      </article>
+      <article class="card">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg></div>
+        <h3>Data Analysis &amp; Konsultan</h3>
+        <p>Mengubah data mentah menjadi temuan yang bisa dipakai untuk keputusan atau laporan.</p>
+        <ul><li>Pembersihan dan pengolahan data</li><li>Statistik deskriptif dan inferensial</li><li>Visualisasi dan interpretasi hasil</li><li>Pendampingan konsultasi</li></ul>
+      </article>
+      <article class="card">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h9l4 4v14H6z"/><path d="M14 3v5h5M9 13h7M9 17h5"/></svg></div>
+        <h3>Skripsi &amp; Artikel SEO</h3>
+        <p>Bantuan menyusun tulisan yang sistematis, rapi, dan mudah ditemukan di mesin pencari.</p>
+        <ul><li>Bimbingan struktur dan metodologi</li><li>Penyuntingan dan sitasi</li><li>Artikel SEO untuk blog dan bisnis</li><li>Riset kata kunci</li></ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <h2>Mengapa Dexalitix Research</h2>
+    <p class="lead">Kami bekerja seperti mitra, bukan sekadar penyedia jasa.</p>
+    <div class="why">
+      <div><b>Sesuai kebutuhan</b><span>Setiap project dirancang dari tujuan Anda, bukan templat yang sama untuk semua.</span></div>
+      <div><b>Komunikasi jelas</b><span>Progres dilaporkan berkala lewat WhatsApp, tanpa istilah yang membingungkan.</span></div>
+      <div><b>Hasil rapi</b><span>Dokumen, data, dan tampilan diperiksa sebelum diserahkan.</span></div>
+      <div><b>Mudah dihubungi</b><span>Konsultasi awal gratis dan bisa dilakukan kapan saja lewat chat.</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="biaya">
+  <div class="wrap">
+    <div class="quote">
+      <div>
+        <h2>Biaya menyesuaikan project Anda</h2>
+        <p>Setiap kebutuhan berbeda, jadi kami tidak memasang daftar harga tetap. Ceritakan project Anda, lalu kami kirim penawaran yang adil dan transparan.</p>
+        <p style="margin-top:22px"><a class="btn" href="https://wa.me/6282324169550?text=Halo%20Dexalitix%20Research%2C%20saya%20ingin%20minta%20penawaran." target="_blank" rel="noopener">Minta penawaran</a></p>
+      </div>
+      <ul><li>Diskusi kebutuhan: gratis</li><li>Penawaran jelas sebelum mulai</li><li>Ruang lingkup disepakati bersama</li><li>Tanpa biaya tersembunyi</li></ul>
+    </div>
+  </div>
+</section>
+
+<section id="proses" class="alt">
+  <div class="wrap">
+    <h2>Cara kerja</h2>
+    <p class="lead">Alurnya sederhana, supaya Anda selalu tahu sedang sampai di mana.</p>
+    <ol class="steps">
+      <li><b>Konsultasi</b><span>Ceritakan kebutuhan lewat WhatsApp atau email.</span></li>
+      <li><b>Penawaran</b><span>Kami jelaskan ruang lingkup, waktu, dan biaya.</span></li>
+      <li><b>Pengerjaan</b><span>Anda mendapat progres berkala dan bisa memberi masukan.</span></li>
+      <li><b>Serah terima</b><span>Hasil final dikirim beserta penjelasan penggunaannya.</span></li>
+    </ol>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="wrap" style="max-width:780px">
+    <h2>Pertanyaan umum</h2>
+    <p class="lead">Jawaban singkat untuk hal yang paling sering ditanyakan.</p>
+    <details><summary>Berapa biaya jasanya?</summary><p>Biaya ditentukan oleh jenis dan kompleksitas project. Hubungi kami, dan penawaran akan dikirim setelah kebutuhan Anda jelas.</p></details>
+    <details><summary>Berapa lama pengerjaannya?</summary><p>Tergantung ruang lingkup. Perkiraan waktu kami sampaikan di awal bersama penawaran.</p></details>
+    <details><summary>Apakah bisa konsultasi dulu?</summary><p>Bisa. Konsultasi awal gratis lewat WhatsApp atau email.</p></details>
+    <details><summary>Apakah melayani di luar Aceh?</summary><p>Ya. Semua layanan dikerjakan secara online, sehingga bisa dilakukan dari kota mana pun.</p></details>
+  </div>
+</section>
+
+<section id="kontak" class="alt">
+  <div class="wrap">
+    <h2>Hubungi kami</h2>
+    <p class="lead">Isi formulir, pesan Anda akan terkirim langsung ke WhatsApp kami.</p>
+    <div class="contact">
+      <div class="info">
+        <p><b>WhatsApp / Telepon</b><a href="https://wa.me/6282324169550" target="_blank" rel="noopener">0823-2416-9550</a></p>
+        <p><b>Email</b><a href="mailto:saidahamada56@gmail.com">saidahamada56@gmail.com</a></p>
+        <p><b>Alamat</b>Jl. Tgk. H. Lebe Genap, Desa Cinta Maju, Kec. Blangpegayon, Kab. Gayo Lues, Provinsi Aceh</p>
+      </div>
+      <form onsubmit="return false">
+        <div><label for="n">Nama</label><input id="n" autocomplete="name" placeholder="Nama Anda"></div>
+        <div><label for="s">Layanan</label>
+          <select id="s"><option>Website &amp; Landing Page</option><option>Data Analysis &amp; Konsultan</option><option>Skripsi &amp; Artikel SEO</option></select></div>
+        <div><label for="m">Pesan</label><textarea id="m" rows="4" placeholder="Ceritakan kebutuhan Anda"></textarea></div>
+        <button class="btn" type="button" id="send">Kirim lewat WhatsApp</button>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<a class="btn wa-float" href="https://wa.me/6282324169550" target="_blank" rel="noopener" aria-label="Chat WhatsApp">WhatsApp</a>
+<footer><div class="wrap"><span>© <span id="y">2026</span> Dexalitix Research</span><span>Konsultan IT, Data &amp; Riset – Gayo Lues, Aceh</span></div></footer>
+
+<script>
+document.getElementById("y").textContent=new Date().getFullYear();
+document.getElementById("send").addEventListener("click",function(){
+  var n=document.getElementById("n").value.trim()||"(tanpa nama)";
+  var s=document.getElementById("s").value;
+  var m=document.getElementById("m").value.trim();
+  var t="Halo Dexalitix Research, saya "+n+". Saya tertarik dengan layanan: "+s+"."+(m?"\n\n"+m:"");
+  window.open("https://wa.me/6282324169550?text="+encodeURIComponent(t),"_blank","noopener");
+});
+</script>
+</body>
+</html>
